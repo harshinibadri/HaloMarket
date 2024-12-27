@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
-import Checkout from './components/checkout';
+import Checkout from './components/Checkout';
 import Header from './components/Header';
 
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [searchTerm, setSearchTerm] = useState(''); // State for search term
 
   useEffect(() => {
     // Mock product data, you can replace this with API calls
@@ -30,15 +31,21 @@ const App = () => {
     ]);
   }, []);
 
+   // Filter products based on search term
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   const addToCart = (product) => {
     setCart([...cart, product]);
   };
 
   return (
     <div>
-      <Header cart={cart} />
+      <Header cart={cart} setSearchTerm={setSearchTerm} />
       <Routes>
-        <Route path="/" element={<ProductList products={products} addToCart={addToCart} />} />
+        {/* Pass filtered products to ProductList */}
+        <Route path="/" element={<ProductList products={filteredProducts} addToCart={addToCart} />} />
         <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
