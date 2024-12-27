@@ -7,16 +7,16 @@ body {
 }
 
 h2 {
-  color: #333;
+  color: #fff7f7;
 }
 
 button {
-  transition: background-color- #8B5CF6; /* Deep Purple */
+  transition: background-color- #fcfcfc; /* Deep Purple */
   
 }
 
 button:hover {
-  background-color: #008113;
+  background-color: #e6eee7;
 }
 
 /* Larger cards styling */
