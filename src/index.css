@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #4481be;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  transition: background-color- #8B5CF6; /* Deep Purple */
+  
+}
+
+button:hover {
+  background-color: #008113;
+}
+
+/* Larger cards styling */
+.card-large {
+  transform: scale(1.1); /* Make the card 10% bigger */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-large img {
+  width: 100%;
+  height: 250px; 
+}
+
+.card-large h3 {
+  font-size: 1.25rem; 
+}
+
+.card {
+  height: 600px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.card img {
+  object-fit: cover; 
+  height: 100%; 
+  width: 100%; 
+}
+
+.card h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+  text-align: center;
+}
