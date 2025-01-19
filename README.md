@@ -1,6 +1,4 @@
-Here's a **README.md** without the code snippets for your e-commerce website project:
 
----
 
 # HaloMarket - E-commerce Website
 
