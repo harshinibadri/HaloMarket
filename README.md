@@ -46,12 +46,4 @@ Once set up, you can access the website in your browser at `http://localhost:300
 - **Cart Page**: Allows users to view the items in their cart, remove them, or continue shopping.
 - **Checkout Page**: Review cart items and proceed with the purchase.
 
-## Contributing
-
-We welcome contributions to improve the project. If you'd like to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make the necessary changes and commit them.
-4. Push your branch and create a pull request.
 
