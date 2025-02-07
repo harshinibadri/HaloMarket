@@ -1,6 +1,7 @@
 
+**[Working Model](https://drive.google.com/file/d/1SiUCJdmcAmkLPXrjzEXj_insi665WJ5C/view?usp=sharing)**
 
-# HaloMarket - E-commerce Website
+# HaloMarket!! - E-commerce Website
 
 HaloMarket is a modern e-commerce website built using **React.js**, **Tailwind CSS**, and **React Router**. The website provides users with an intuitive platform to browse products, add items to their cart, and proceed to checkout. It is designed to be simple, user-friendly, and fully responsive.
 
